@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #The command used to compile the interperter is very tedious to write, so I made a bash script to automate it.
 #If this script somehow stops working, simply copy-paste the command from the file onto the terminal.
-/usr/bin/mcs main.cs parse.cs command.cs errors.cs tokenize.cs varmanager.cs extensions.cs -out:cmdc.exe
+/usr/bin/mcs main.cs parse.cs command.cs errors.cs tokenize.cs varmanager.cs extensions.cs -out:cmdi
