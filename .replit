@@ -1,0 +1,2 @@
+language = "C#"
+run = "csc main.cs command.cs errors.cs extensions.cs parse.cs tokenize.cs varmanager.cs && mono main.exe program.cmdsc"

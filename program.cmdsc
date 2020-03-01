@@ -1,0 +1,2 @@
+create x 'Hello, World!'
+disp < get x >
