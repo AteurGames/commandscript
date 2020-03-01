@@ -14,12 +14,15 @@ namespace Main {
   		public static void Main (string[] args) {
 			if(args.Length < 1) return;
 			string[] Lines = System.Text.RegularExpressions.Regex.Split(File.ReadAllText(args[0]),@"\n");
+			int j = 1;
 			foreach(string i in Lines) {
 				try {
 					LineParser.ParseLine(i);
 				} catch (Exception e) {
-					Console.WriteLine($"{e.GetType().Name}: {e.Message}");
+					Console.WriteLine($"{e.GetType().Name}: {e.Message}\nAt line {i.ToString()}");
+					return;
 				}
+				j++;
 			}
   		}
 	}
