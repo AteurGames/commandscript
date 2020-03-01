@@ -15,7 +15,11 @@ namespace Main {
 			if(args.Length < 1) return;
 			string[] Lines = System.Text.RegularExpressions.Regex.Split(File.ReadAllText(args[0]),@"\n");
 			foreach(string i in Lines) {
-				LineParser.ParseLine(i);
+				try {
+					LineParser.ParseLine(i);
+				} catch (Exception e) {
+					Console.WriteLine($"{e.GetType().Name}: {e.Message}");
+				}
 			}
   		}
 	}
