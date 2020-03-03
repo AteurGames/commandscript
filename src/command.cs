@@ -21,6 +21,8 @@ namespace CommandRunner {
 					return CommandList.Get(Args,Flags);
 				case "disp":
 					return CommandList.Disp(Args,Flags);
+				case "throw":
+					return CommandList.Throw(Args,Flags);
 			}
 		}
 		public static string RunCommand(ParsedTokenList Tokens) {
@@ -67,8 +69,11 @@ namespace CommandRunner {
 			Console.WriteLine(Regex.Replace(Args[0],"'",""));
 			return Regex.Replace(Args[0],"[\"']","");
 		}
-		public static string Contains(string[] Args, string[] Flags) {
+		public static string ContainsCmd(string[] Args, string[] Flags) {
 			if(Regex.IsMatch(Args[0],Args[1])) return "T"; else return "F";
+		}
+		public static string Throw(string[] Args, string[] Flags) {
+			throw new Exception(Args[0]);
 		}
 	}
 }

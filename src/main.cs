@@ -19,7 +19,9 @@ namespace Main {
 				try {
 					LineParser.ParseLine(i);
 				} catch (Exception e) {
-					Console.WriteLine($"{e.GetType().Name}: {e.Message}\nAt line {i.ToString()}");
+					Console.ForegroundColor = ConsoleColor.Red;
+					Console.WriteLine($"`{i}`\n{e.GetType().Name}: {e.Message}\nAt line {j.ToString()}");
+					Console.ResetColor();
 					return;
 				}
 				j++;
