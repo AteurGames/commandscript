@@ -9,8 +9,6 @@ namespace CommandRunner {
 	public class CommandEngine {
 		public static string RunCommand(string Command, string[] Args, string[] Flags) {
 			switch(Command.ToLower()) {
-				default:
-					return null;
 				case "create":
 					return CommandList.Create(Args,Flags);
 				case "remove":
@@ -23,6 +21,8 @@ namespace CommandRunner {
 					return CommandList.Disp(Args,Flags);
 				case "throw":
 					return CommandList.Throw(Args,Flags);
+				default:
+					throw new UnknownCommandException(Command);
 			}
 		}
 		public static string RunCommand(ParsedTokenList Tokens) {
