@@ -1,5 +1,5 @@
-documentation:
+enhancement:
   - src/*
   
-enhancement:
+documentation:
   - readme.md
