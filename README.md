@@ -11,15 +11,15 @@ It has many *wondeful* features, including:
 ### Usage/Examples
 #### Hello world
 ```
-disp "Hello, World!"
+disp 'Hello, World!'
 ```
 #### Variables
 ```
-create myVar "Hello, World!"
+create myVar 'Hello, World!'
 ```
 #### Sub-Commands
 ```
-create toDisplay "Hello from a variable!"
+create toDisplay 'Hello from a variable!'
 disp < get toDisplay >
 ```
 
