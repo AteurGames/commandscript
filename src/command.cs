@@ -32,10 +32,16 @@ namespace CommandRunner {
 	public class CommandList {
 		public static string Create(string[] Args, string[] Flags) {
 			if(Args.Length < 2) throw new TooLittleArgumentsException();
-			Console.WriteLine(Args[0]);
-			Console.WriteLine(Args[1]);
 			Vars.Add(Args[0],Args[1]);
 			return Args[1];
+		}
+		public static string Set(string[] Args, string[] Flags) {
+			if(Args.Length < 2) throw new TooLittleArgumentsException();
+			try {
+				Vars[Args[0]] = Args[1];
+			} catch(Exception) {
+				throw new UnknownVariableException();
+			}
 		}
 		public static string Remove(string[] Args, string[] Flags) {
 			if(Args.Length < 1) throw new TooLittleArgumentsException();
