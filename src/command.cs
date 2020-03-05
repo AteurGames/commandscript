@@ -40,8 +40,9 @@ namespace CommandRunner {
 			try {
 				Vars[Args[0]] = Args[1];
 			} catch(Exception) {
-				throw new UnknownVariableException();
+				throw new UnknownVariableException(Args[0]);
 			}
+			return Args[1];
 		}
 		public static string Remove(string[] Args, string[] Flags) {
 			if(Args.Length < 1) throw new TooLittleArgumentsException();
