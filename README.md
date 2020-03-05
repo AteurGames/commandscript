@@ -10,17 +10,26 @@ It has many *wondeful* features, including:
 
 ### Usage/Examples
 #### Hello world
-```
+```cs
 disp 'Hello, World!'
 ```
 #### Variables
-```
+```cs
 create myVar 'Hello, World!'
 ```
 #### Sub-Commands
-```
+```cs
 create toDisplay 'Hello from a variable!'
 disp < get toDisplay >
+```
+### Dictionary (Coming soon)
+```cs
+dic_create greets
+
+dic_set greets english 'hello'
+dic_set greets spanish 'hola'
+
+disp < dic_get greets english >
 ```
 
 ### Known bugs
