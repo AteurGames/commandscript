@@ -2,4 +2,4 @@ enhancement:
   - src/*
   
 documentation:
-  - readme.md
+  - README.md
