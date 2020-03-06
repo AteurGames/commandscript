@@ -1,5 +1,5 @@
 ## Commandscript
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs Welcome](http://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
 Commandscript is an esoteric language based solely around commands.
 
