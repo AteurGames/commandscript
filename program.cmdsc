@@ -1,2 +1,3 @@
-create x 'Hello, World!'
+set x 'Hello, World!'
+
 disp < get x >

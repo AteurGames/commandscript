@@ -1,9 +1,9 @@
 ## Commandscript
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs Welcome](http://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
 
 Commandscript is an esoteric language based solely around commands.
 
-It has many *wondeful* features, including:
+It has many *wonderful* features, including:
 * GNU! Can't steal mah stuff!
 * No pesky operators! And I mean NONE!
 * C#-Based for all you nerds!

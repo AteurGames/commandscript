@@ -17,7 +17,7 @@ namespace Main {
 			int j = 1;
 			foreach(string i in Lines) {
 				try {
-					LineParser.ParseLine(i);
+					if(i!="") LineParser.ParseLine(i);
 				} catch (Exception e) {
 					Console.ForegroundColor = ConsoleColor.Red;
 					Console.WriteLine($"`{i}`\n{e.GetType().Name}: {e.Message}\nAt line {j.ToString()}");
