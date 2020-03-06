@@ -6,7 +6,7 @@ using static CommandRunner.CommandEngine;
 
 namespace Parser {
 	class LineParser {
-		private const string SubCmdRegex = @"<(\s*.*\s*)>";
+		private const string SubCmdRegex = @"<\s*(.)*\s*>";
 
 		public static string ParseLine(string Line) {
 			string[] Tokens = Tokenizer.Tokens(Line);
@@ -24,6 +24,7 @@ namespace Parser {
 			return RunCommand(TokenList);
 		}
 		public static string ParseSubCmd(string PossibleSubCmd) {
+			Console.WriteLine("P: "+PossibleSubCmd);
 			if (PossibleSubCmd == null) return "";
 			if(Regex.IsMatch(PossibleSubCmd,SubCmdRegex)) {
 				return ParseLine(Regex.Replace(PossibleSubCmd,SubCmdRegex,"$1"));
