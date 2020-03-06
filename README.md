@@ -1,5 +1,6 @@
 ## Commandscript
 [![PRs Welcome](http://img.shields.io/badge/PRs-welcome-brightgreen)](http://makeapullrequest.com)
+[![no realeses yet](https://img.shields.io/badge/download-no%20releases%20yet-critical)](releases)
 
 Commandscript is an esoteric language based solely around commands.
 
@@ -24,7 +25,7 @@ create myVar 'Hello, World!'
 create toDisplay 'Hello from a variable!'
 disp < get toDisplay >
 ```
-### Dictionary (Coming soon)
+#### Dictionary (Coming soon)
 ```cs
 dic_create greets
 
