@@ -18,3 +18,5 @@ Here are some edits we would not like:
 - Changing formatting method (unless there are mixed formatting; always assume tabs)
 - Additions to documentation that claim something is "coming soon" without permission from the author
 - Additions to documentation that are untrue or try to mask the truth
+
+**Working on your first Pull Request?** You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
